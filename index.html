@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie cinema</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer type="module" src=" ./js/index.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="header_title"><a href="index.html">Movie Cinema</a></h1>
+            <section class="search_container">
+                <form action="" class="search_box" id="searchBox" method="get">
+                    <input id="searchInput" type="text" placeholder="영화 이름을 입력해주세요." autofocus autocomplete="off">
+                    <button id="searchBtn" type="submit">검색</button>
+     
+                </form>
+            </section>
+        </header>
+        <div clsass="container">
+            <section id="card_container">
+                <!--영화 카드 들어갈 부분 -->
+            </section>
+          </div>
+    </div>
+    
+    <!-- 모달 템플릿 -->
+    <template id="movie-modal-template">
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modal-title"></h2>
+          <img id="modal-image" src="" alt="Movie Poster" />
+          <p id="modal-overview"></p>
+          <p><strong>Release Date:</strong> <span id="modal-release-date"></span></p>
+          <p><strong>Genres:</strong> <span id="modal-genres"></span></p>
+        </div>
+      </div>
+    </template>
+    
+</body>
+
+</html>
